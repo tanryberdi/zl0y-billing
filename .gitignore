@@ -27,3 +27,6 @@ Temporary Items
 
 # IDE
 .idea/
+
+# Environment files
+.env
