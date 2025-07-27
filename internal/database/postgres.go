@@ -32,7 +32,7 @@ func createUsersTable(db *sql.DB) error {
 	    login VARCHAR(255) NOT NULL UNIQUE,
 	    password_hash VARCHAR(255) NOT NULL,
 	    balance INTEGER DEFAULT 10000, -- 100.00 in cents as a starting balance
-	    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 	);
 
 	CREATE INDEX IF NOT EXISTS idx_users_login ON users(login);
