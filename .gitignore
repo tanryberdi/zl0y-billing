@@ -30,3 +30,8 @@ Temporary Items
 
 # Environment files
 .env
+
+# Executables
+*.exe
+main
+/main
